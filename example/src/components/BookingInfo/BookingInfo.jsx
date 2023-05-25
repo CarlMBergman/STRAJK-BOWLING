@@ -15,7 +15,7 @@ function BookingInfo({ updateBookingDetails }) {
                     <Input label="Time" type="text"
                     name="time" handleChange={ updateBookingDetails } />
                 </section>
-                <Input label="Number of awesome bowlers" type="number" customClass="booking-info__who"
+                <Input label="Number of awesome bowlers per lane" type="number" customClass="booking-info__who"
                 name="people" handleChange={ updateBookingDetails } />
                 <Input label="Number of lanes" type="number" customClass="booking-info__lanes"
                 name="lanes" handleChange={ updateBookingDetails } />
