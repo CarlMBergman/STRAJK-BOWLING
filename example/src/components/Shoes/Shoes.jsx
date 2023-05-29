@@ -9,11 +9,11 @@ function Shoes({ updateSize, addShoe, removeShoe, shoes }) {
         const label = `Shoe size / person ${index + 1}`;
         const shoeInput = (
         <article className='shoes__form' key={ input.id }>
-            <Input label={ label } type='text'
+            <Input dataid='shoes__input' label={ label } type='text'
                 customClass='shoes__input'
                 name={ input.id }
                 handleChange={ updateSize } />
-            <button className='shoes__button shoes__button--small' 
+            <button data-id='shoe__remove' className='shoes__button shoes__button--small' 
             onClick={ () => { removeShoe(input.id) }}>-</button>
         </article> )
 
@@ -26,7 +26,7 @@ function Shoes({ updateSize, addShoe, removeShoe, shoes }) {
                 <h2 className="shoes__heading">Shoes</h2>
             </header>
             { shoeComps }
-            <button className="shoes__button" onClick={ () => { addShoe(nanoid()) } }>+</button>
+            <button data-id='add__shoe' className="shoes__button" onClick={ () => { addShoe(nanoid()) } }>+</button>
         </section>
     )
 }

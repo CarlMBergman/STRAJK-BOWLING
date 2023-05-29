@@ -70,7 +70,7 @@ function Booking() {
     }
 
     function comparePeopleAndShoes() {
-        return (parseInt(booking.people) * parseInt(booking.lanes)) === shoes.length;
+        return parseInt(booking.people) === shoes.length;
     }
 
     async function book() {
@@ -93,13 +93,13 @@ function Booking() {
     }
 
     return (
-        <section className='booking'>
+        <section data-id='booking' className='booking'>
             <Navigation />
             <Top title="Booking" />
             <BookingInfo updateBookingDetails={ updateBookingDetails } />
             <Shoes updateSize={ updateSize } addShoe={ addShoe }
                     removeShoe={ removeShoe } shoes={ shoes } />
-            <button className="button booking__button" onClick={ book }>strIIIIIike!</button>
+            <button data-id='booking__button' className="button booking__button" onClick={ book }>strIIIIIike!</button>
             { error ? <ErrorMessage /> : '' }
         </section>
     )
