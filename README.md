@@ -10,7 +10,7 @@ Som användare vill jag kunna boka datum och tid samt ange antal spelare så att
 Som användare vill jag kunna välja skostorlek för varje spelare så varje spelare får skor som passar.
 
     1. Användaren ska kunna trycka på lägga till knappen för att lägga till 1 eller flera skor
-    2. Användaren ska kunna skriva in den/dem skostorlekarna spelarna ska ha
+    2. Användaren ska kunna skriva in den/dem skostorlekarna bowlarna ska ha
 
 Som användare vill jag kunna ta bort ett fält för skostorlek om jag råkade klicka i ett för mycket så jag inte boka skor i onödan.
 
@@ -20,6 +20,7 @@ Som användare vill jag kunna skicka iväg min reservation och få tillbaka ett 
 
     1. All info ska visas när användaren kommer till bekräftelsesidan
     2. Summan ska ha räknats ut och visas
+    3. Inputfälten ska vara disabled
 
 Som användare vill jag kunna navigera mellan boknings-och bekräftelsevyn.
 
