@@ -1,7 +1,7 @@
 describe('template spec', () => {
   beforeEach(() => {
     // Denna funktion körs varje gång innan varje test
-    cy.visit('http://localhost:5173/#');
+    cy.visit('http://localhost:5175/#');
   });
 
   it('should type in all inputfields', () => {
@@ -26,6 +26,13 @@ describe('template spec', () => {
     cy.get("[data-id='shoes__input']").last().type('43')
     cy.get("[data-id='booking__button']").click()
     cy.get("[data-id='confirmation']").should('be.visible')
+  })
+
+  it('should not type in bowlers and lanes', () => {
+    cy.get("[data-id='booking-info__bowlers']").type('wasd')
+    cy.get("[data-id='booking-info__lanes']").type('wasd')
+    cy.get("[data-id='booking-info__bowlers']").should('have.value', '')
+    cy.get("[data-id='booking-info__lanes']").should('have.value', '')
   })
 
   it('should show error message when date is not filled', () => {

@@ -1,7 +1,7 @@
 describe('template spec', () => {
     beforeEach(() => {
       // Denna funktion körs varje gång innan varje test
-      cy.visit('http://localhost:5173/#');
+      cy.visit('http://localhost:5175/#');
     });
 
 it('should add two pair of shoes and sizes', () => {
